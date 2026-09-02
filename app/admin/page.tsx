@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { TrendingUp, ShoppingBag, Package, Clock } from "lucide-react";
+
+export const dynamic = "force-dynamic";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { OrderStatusBadge } from "@/components/shop/order-status-badge";
 import { getDashboardStats } from "@/lib/services/order.service";

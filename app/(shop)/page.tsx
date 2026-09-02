@@ -8,6 +8,8 @@ import { getFeaturedProducts } from "@/lib/services/product.service";
 import { prisma } from "@/lib/db";
 import { getT } from "@/lib/server-i18n";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Lumière Jewelry - Timeless Elegance",
   description:
