@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { Share2, ShoppingCart, Zap, Shield, ChevronRight } from "lucide-react";
+import { ShoppingCart, Zap, Shield, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
@@ -10,6 +10,7 @@ import { ProductCard } from "@/components/shop/product-card";
 import { getProductBySlug, getRelatedProducts } from "@/lib/services/product.service";
 import { formatPrice, getDiscountPercent, getDirectOrderUrl } from "@/lib/utils";
 import { AddToCartButton } from "@/components/shop/add-to-cart-button";
+import { CopyLinkButton } from "@/components/shop/copy-link-button";
 import { getT } from "@/lib/server-i18n";
 
 interface PageProps {
@@ -133,16 +134,7 @@ export default async function ProductPage({ params }: PageProps) {
               <code className="flex-1 text-xs bg-background rounded px-2 py-1.5 border truncate">
                 {directOrderUrl}
               </code>
-              <Button
-                size="sm"
-                variant="outline"
-                className="flex-shrink-0"
-                onClick={async () => { "use client"; }}
-                data-copy-url={directOrderUrl}
-              >
-                <Share2 className="h-3.5 w-3.5 me-1" />
-                {t("productDetail.copy")}
-              </Button>
+              <CopyLinkButton url={directOrderUrl} label={t("productDetail.copy")} />
             </div>
           </div>
 
