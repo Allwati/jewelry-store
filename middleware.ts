@@ -16,13 +16,9 @@ export async function middleware(req: NextRequest) {
   );
   const isAuthPath = AUTH_PATHS.some((p) => pathname.startsWith(p));
 
-  // Inject pathname for layout detection
-  const requestHeaders = new Headers(req.headers);
-  requestHeaders.set("x-pathname", pathname);
-
   // Allow public admin paths (login page)
   if (isPublicAdminPath) {
-    return NextResponse.next({ request: { headers: requestHeaders } });
+    return NextResponse.next();
   }
 
   // Protect admin routes
@@ -34,7 +30,7 @@ export async function middleware(req: NextRequest) {
     if (!session || session.role !== "ADMIN") {
       return NextResponse.redirect(new URL("/admin/login", req.url));
     }
-    return NextResponse.next({ request: { headers: requestHeaders } });
+    return NextResponse.next();
   }
 
   // Protect user routes (soft redirect)
@@ -52,7 +48,7 @@ export async function middleware(req: NextRequest) {
     }
   }
 
-  return NextResponse.next({ request: { headers: requestHeaders } });
+  return NextResponse.next();
 }
 
 export const config = {
