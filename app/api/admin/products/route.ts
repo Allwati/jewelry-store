@@ -41,9 +41,10 @@ export async function POST(req: Request) {
       );
     }
 
+    const { categoryId, ...rest } = input.data;
     const product = await createProduct({
-      ...input.data,
-      category: { connect: { id: input.data.categoryId } },
+      ...rest,
+      category: { connect: { id: categoryId } },
       images,
     });
 
