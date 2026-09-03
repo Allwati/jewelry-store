@@ -331,7 +331,6 @@
     "formPrice": "Price (LYD)",
     "formDiscountedPrice": "Discounted Price (LYD)",
     "formDiscountedPricePlaceholder": "Leave empty for no discount",
-    "formSku": "SKU",
     "formStock": "Stock Quantity",
     "formOrganization": "Organization",
     "formCategory": "Category",

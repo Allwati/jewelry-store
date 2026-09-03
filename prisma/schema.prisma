@@ -102,7 +102,6 @@ model Product {
   slug             String    @unique
   description      String
   shortDescription String?
-  sku              String    @unique
   price            Decimal   @db.Decimal(10, 2)
   discountedPrice  Decimal?  @db.Decimal(10, 2)
   stockQuantity    Int       @default(0)
@@ -218,7 +217,6 @@ model OrderItem {
   orderId     String
   productId   String
   productTitle String
-  productSku  String
   imageUrl    String?
   price       Decimal @db.Decimal(10, 2)
   quantity    Int

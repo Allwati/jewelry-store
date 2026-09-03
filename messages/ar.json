@@ -331,7 +331,6 @@
     "formPrice": "السعر (د.ل)",
     "formDiscountedPrice": "السعر بعد الخصم (د.ل)",
     "formDiscountedPricePlaceholder": "اتركه فارغاً إذا لا يوجد خصم",
-    "formSku": "رمز المنتج (SKU)",
     "formStock": "كمية المخزون",
     "formOrganization": "التصنيف",
     "formCategory": "الفئة",

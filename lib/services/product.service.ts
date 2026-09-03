@@ -61,7 +61,6 @@ export async function getProducts(filters: ProductFilters = {}) {
     where.OR = [
       { title: { contains: search, mode: "insensitive" } },
       { description: { contains: search, mode: "insensitive" } },
-      { sku: { contains: search, mode: "insensitive" } },
     ];
   }
   if (isFeatured !== undefined) where.isFeatured = isFeatured;
@@ -214,7 +213,6 @@ export async function getAllProductsAdmin(
   if (search) {
     where.OR = [
       { title: { contains: search, mode: "insensitive" } },
-      { sku: { contains: search, mode: "insensitive" } },
     ];
   }
 

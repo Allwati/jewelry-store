@@ -72,7 +72,6 @@ export default async function EditProductPage({ params }: PageProps) {
           slug: product.slug,
           description: product.description,
           shortDescription: product.shortDescription ?? "",
-          sku: product.sku,
           price: Number(product.price),
           discountedPrice: product.discountedPrice ? Number(product.discountedPrice) : undefined,
           stockQuantity: product.stockQuantity,

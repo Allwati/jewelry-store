@@ -87,7 +87,6 @@ export default async function ProductPage({ params }: PageProps) {
               )}
             </div>
             <h1 className="font-serif text-2xl md:text-3xl font-bold leading-tight">{product.title}</h1>
-            <p className="text-sm text-muted-foreground mt-1">SKU: {product.sku}</p>
           </div>
 
           {/* Price */}

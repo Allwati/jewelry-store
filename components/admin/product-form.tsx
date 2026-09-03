@@ -62,7 +62,6 @@ export function ProductForm({ categories, initialData }: ProductFormProps) {
       slug: initialData?.slug ?? "",
       description: initialData?.description ?? "",
       shortDescription: initialData?.shortDescription ?? "",
-      sku: initialData?.sku ?? "",
       price: initialData?.price ?? 0,
       discountedPrice: initialData?.discountedPrice ?? undefined,
       stockQuantity: initialData?.stockQuantity ?? 0,
@@ -332,19 +331,6 @@ export function ProductForm({ categories, initialData }: ProductFormProps) {
                     setValueAs: (v) => (v === "" || v === null ? null : Number(v)),
                   })}
                 />
-              </div>
-
-              <div className="space-y-1.5">
-                <Label htmlFor="sku">{t("adminProducts.formSku")} *</Label>
-                <Input
-                  id="sku"
-                  placeholder="RING-001"
-                  {...register("sku")}
-                  className={errors.sku ? "border-destructive" : ""}
-                />
-                {errors.sku && (
-                  <p className="text-xs text-destructive">{errors.sku.message}</p>
-                )}
               </div>
 
               <div className="space-y-1.5">

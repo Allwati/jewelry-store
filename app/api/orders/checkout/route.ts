@@ -71,7 +71,6 @@ export async function POST(req: Request) {
       return {
         productId: product.id,
         productTitle: product.title,
-        productSku: product.sku,
         imageUrl: product.images[0]?.url ?? null,
         price,
         quantity: item.quantity,

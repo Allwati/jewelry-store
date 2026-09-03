@@ -50,7 +50,6 @@ export async function createGuestOrder(input: GuestOrderInput) {
           create: {
             productId: product.id,
             productTitle: product.title,
-            productSku: product.sku,
             imageUrl: product.images[0]?.url ?? null,
             price,
             quantity: input.quantity,

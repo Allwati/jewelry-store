@@ -83,7 +83,6 @@ async function main() {
     {
       title: "Diamond Solitaire Ring",
       slug: "diamond-solitaire-ring",
-      sku: "RING-001",
       description:
         "A timeless 18K white gold solitaire ring featuring a brilliant-cut 1.0 carat diamond. Perfect for engagements or as a statement piece. Certified by GIA.",
       shortDescription: "18K white gold, 1.0ct brilliant diamond",
@@ -110,7 +109,6 @@ async function main() {
     {
       title: "Rose Gold Diamond Halo Ring",
       slug: "rose-gold-diamond-halo-ring",
-      sku: "RING-002",
       description:
         "An exquisite 14K rose gold halo ring featuring a 0.75 carat center diamond surrounded by a dazzling halo of smaller diamonds.",
       shortDescription: "14K rose gold with diamond halo",
@@ -132,7 +130,6 @@ async function main() {
     {
       title: "Pearl Strand Necklace",
       slug: "pearl-strand-necklace",
-      sku: "NECK-001",
       description:
         "A classic 18-inch strand of Akoya cultured pearls, hand-knotted on silk with an 18K gold clasp. Each pearl measures 7-8mm.",
       shortDescription: "Akoya cultured pearls, 18K gold clasp",
@@ -154,7 +151,6 @@ async function main() {
     {
       title: "Diamond Tennis Necklace",
       slug: "diamond-tennis-necklace",
-      sku: "NECK-002",
       description:
         "A stunning 16-inch tennis necklace featuring 3 carats of round brilliant diamonds set in 18K white gold.",
       shortDescription: "3ct total diamonds in 18K white gold",
@@ -175,7 +171,6 @@ async function main() {
     {
       title: "Diamond Stud Earrings",
       slug: "diamond-stud-earrings",
-      sku: "EARR-001",
       description:
         "Classic 14K white gold diamond stud earrings featuring 1.0 carat total weight of G-H color, VS clarity diamonds.",
       shortDescription: "1.0ct TW diamond studs, 14K white gold",
@@ -197,7 +192,6 @@ async function main() {
     {
       title: "Sapphire Drop Earrings",
       slug: "sapphire-drop-earrings",
-      sku: "EARR-002",
       description:
         "Elegant 18K yellow gold drop earrings featuring oval Ceylon sapphires accented with diamond halos.",
       shortDescription: "Ceylon sapphires with diamond halos",
@@ -218,7 +212,6 @@ async function main() {
     {
       title: "Diamond Tennis Bracelet",
       slug: "diamond-tennis-bracelet",
-      sku: "BRAC-001",
       description:
         "A magnificent 7-inch diamond tennis bracelet featuring 5 carats of round brilliant diamonds in 18K white gold.",
       shortDescription: "5ct TW diamonds, 18K white gold, 7 inch",
@@ -240,7 +233,6 @@ async function main() {
     {
       title: "Gold Bangle Bracelet",
       slug: "gold-bangle-bracelet",
-      sku: "BRAC-002",
       description:
         "An elegant 18K solid gold bangle bracelet with a brushed finish and polished edges. Perfect for everyday luxury.",
       shortDescription: "18K solid gold bangle, brushed finish",

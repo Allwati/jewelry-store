@@ -60,7 +60,6 @@ export default async function AdminProductsPage({ searchParams }: PageProps) {
             <thead className="border-b border-border/50 bg-muted/30">
               <tr>
                 <th className="text-start px-4 py-3 text-sm font-medium text-muted-foreground">{t("adminProducts.productCol")}</th>
-                <th className="text-start px-4 py-3 text-sm font-medium text-muted-foreground">SKU</th>
                 <th className="text-start px-4 py-3 text-sm font-medium text-muted-foreground">{t("adminProducts.priceCol")}</th>
                 <th className="text-start px-4 py-3 text-sm font-medium text-muted-foreground">{t("adminProducts.stockCol")}</th>
                 <th className="text-start px-4 py-3 text-sm font-medium text-muted-foreground">{t("adminProducts.statusCol")}</th>
@@ -85,9 +84,6 @@ export default async function AdminProductsPage({ searchParams }: PageProps) {
                           <p className="text-xs text-muted-foreground">{product.category.name}</p>
                         </div>
                       </div>
-                    </td>
-                    <td className="px-4 py-3">
-                      <span className="font-mono text-xs text-muted-foreground">{product.sku}</span>
                     </td>
                     <td className="px-4 py-3">
                       <div>
