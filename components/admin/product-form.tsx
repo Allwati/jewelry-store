@@ -329,8 +329,7 @@ export function ProductForm({ categories, initialData }: ProductFormProps) {
                   min="0"
                   placeholder={t("adminProducts.formDiscountedPricePlaceholder")}
                   {...register("discountedPrice", {
-                    valueAsNumber: true,
-                    setValueAs: (v) => (v === "" || isNaN(v) ? null : v),
+                    setValueAs: (v) => (v === "" || v === null ? null : Number(v)),
                   })}
                 />
               </div>
